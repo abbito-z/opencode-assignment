@@ -22,6 +22,8 @@ across visits.
 ## Local Development
 
 1.  **Using Python 3:**
+    
+    Must be in project folder.
     ```bash
     python -m http.server
     ```
@@ -32,13 +34,13 @@ across visits.
     - Right-click `index.html` and select "Open with Live Server".
     - Or click the "Go Live" button in the lower-right status bar.
 
-3.  **Verify the site:**
+3.  **Verify and Using the site:**
     - Page scales from narrow (mobile) to wide (desktop) browser widths.
     - Theme button ("Pink theme" / "Lilac theme") toggles the `.pink` class.
     - Color scheme changes when the button is clicked (accent from lilac `#b080d0` to pink `#d493cf`, background from `#f6cef9` to `#ffd8f3`).
     - Keyboard navigation works (`Tab` moves focus, `focus-visible` outlines appear).
     - Theme preference survives a page reload.
-- **Ctrl+Enter toggles the theme** (without clicking the button).
+    - **Ctrl+Enter toggles the theme** (without clicking the button).
 
 ## Build / Modify
 
