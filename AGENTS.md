@@ -10,7 +10,7 @@ One-page hobby website about origami for kids. All work stays inside this projec
 - **Languages:** Semantic HTML, vanilla CSS (custom properties, media queries), vanilla JS.
 - **Responsive:** Works at narrow (mobile) and wide (desktop) browser widths.
 - **Keyboard accessible:** Full keyboard navigation, `focus-visible` outlines, skip link, aria attributes.
-- **Theme:** Light mode with lilac accent; a theme switcher toggles a `.lilac` class on `<body>`.
+- **Theme:** Lilac and pink themes; a theme switcher toggles a `.pink` class on `<html>` (default is lilac from `:root`).
 - **Persistence:** User's theme choice is saved in `localStorage` and survives page reload.
 - **Git:** `.gitignore` must include `.env`, `node_modules/`, and `.DS_Store`.
 
@@ -27,9 +27,9 @@ origami-kids/
 ```
 
 ## How the Interaction Works
-1. In the header, a button labeled **"Lilac mode"** (or **"Light mode"** when active) toggles the theme.
-2. Clicking or pressing `Enter/Space` on the button adds/removes a `.lilac` class from `<html>`.
-3. The `.lilac` class changes the accent color variable from `--accent: #b080d0` to `--accent: #8b5a9b` and lightens the background tint.
+1. In the header, a button labeled **"Pink mode"** (or **"Lilac mode"** when active) toggles the theme.
+2. Clicking or pressing `Enter/Space` on the button adds/removes a `.pink` class from `<html>`.
+3. The `.pink` class changes the accent color variable from `--accent: #b080d0` to `--accent: #e86e71` and lightens the background tint to a pink palette.
 4. The button’s `aria-pressed` attribute is updated to reflect the state, and screen readers announce the change.
 5. The preference is saved to `localStorage` so the chosen theme persists across visits.
 
@@ -43,6 +43,6 @@ origami-kids/
 4. Open http://localhost:8000 in your browser.
 5. Verify:
    - Page scales from narrow to wide width.
-   - Theme button toggles lilac/light mode.
+   - Theme button toggles lilac/pink mode.
    - Keyboard focus is visible (use `Tab` key).
    - Theme preference persists after reload.

@@ -1,7 +1,7 @@
 /* style.css – Responsive lilac-themed origami page */
 /* https://github.com/user/origami-kids */
 
-/* :root variables – light mode with lilac accent */
+/* :root variables – default lilac theme */
 :root{
   --accent: #b080d0;
   --bg: #faf0f7;
@@ -10,10 +10,13 @@
   --card: #ffffff;
 }
 
-/* Light lilac mode – toggled via .lilac class on <html> */
-body.lilac{
-  --accent: #8b5a9b;
-  --bg: #f3e5f5;
+/* Pink theme – toggled via .pink class on <html> */
+body.pink{
+  --accent: #e86e71;
+  --bg: #fdf2f8;
+  --text: #2d1b20;
+  --muted: #7b2d3f;
+  --card: #fff0f5;
 }
 
 /* Base */

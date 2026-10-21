@@ -6,7 +6,7 @@ semantic HTML, readable CSS, and a small script — no dependencies, no CDN.
 ## Purpose
 
 Introduce the art of paper folding with a short definition, basic fold explanations,
-and getting-started tips. Includes a lilac-mode theme switcher that persists across
+and getting-started tips. Includes a lilac-and-pink theme switcher that persists across
 visits.
 
 ## Files (no external deps)
@@ -34,7 +34,7 @@ visits.
 
 3.  **Verify the site:**
     - Page scales from narrow (mobile) to wide (desktop) browser widths.
-    - Theme button ("Lilac mode" / "Light mode") toggles the `.lilac` class.
+    - Theme button ("Lilac mode" / "Pink mode") toggles the theme.
     - Keyboard navigation works (`Tab` moves focus, `focus-visible` outlines appear).
     - Theme preference survives a page reload.
 
