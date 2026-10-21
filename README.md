@@ -6,15 +6,15 @@ semantic HTML, readable CSS, and a small script — no dependencies, no CDN.
 ## Purpose
 
 Introduce the art of paper folding with a short definition, basic fold explanations,
-and getting-started tips. Includes a lilac-and-pink theme switcher that persists across
-visits.
+and getting-started tips. Includes a lilac-and-pink theme switcher that persists
+across visits.
 
 ## Files (no external deps)
 
 | File | Description |
 |------|-------------|
 | `index.html` | Page structure, heading, intro, two sections, theme button |
-| `style.css` | Responsive layout, lilac-themed variables, focus-visible styles |
+| `style.css` | Responsive layout, lilac-and-pink theme variables, focus-visible styles |
 | `script.js` | Theme toggler with `localStorage` persistence |
 | `.gitignore` | Ignores `.env`, `node_modules/`, `.DS_Store` |
 | `AGENTS.md` | Project constraints and interaction docs |
@@ -34,13 +34,14 @@ visits.
 
 3.  **Verify the site:**
     - Page scales from narrow (mobile) to wide (desktop) browser widths.
-    - Theme button ("Lilac mode" / "Pink mode") toggles the theme.
+    - Theme button ("Pink mode" / "Lilac mode") toggles the `.pink` class.
+    - Color scheme changes when the button is clicked (accent from lilac to pink, background tint changes).
     - Keyboard navigation works (`Tab` moves focus, `focus-visible` outlines appear).
     - Theme preference survives a page reload.
 
 ## Build / Modify
 
 - No build steps. Edit `index.html`, `style.css`, or `script.js` directly.
-- To change the accent color, modify the `--accent` variable in `:root` (in `style.css`).
+- To change the accent colors, modify the `--accent` variable in `:root` (lilac: `#b080d0`) or the `.pink` rule (pink: `#e86e71`).
 - To add more content sections, add `<section>` elements inside the `.content-grid`
   container in `index.html`.

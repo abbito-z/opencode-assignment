@@ -1,22 +1,31 @@
-/* style.css – Responsive lilac-themed origami page */
+/* style.css – Responsive lilac-and-pink origami page */
 /* https://github.com/user/origami-kids */
 
 /* :root variables – default lilac theme */
+/* These values are kept fixed */
 :root{
   --accent: #b080d0;
-  --bg: #faf0f7;
+  --bg: #f7d8f9;
   --text: #212529;
   --muted: #6c757d;
   --card: #ffffff;
 }
 
 /* Pink theme – toggled via .pink class on <html> */
-body.pink{
-  --accent: #e86e71;
-  --bg: #fdf2f8;
-  --text: #2d1b20;
-  --muted: #7b2d3f;
-  --card: #fff0f5;
+/* Do not overwrite these color values */
+html.pink{
+  --accent: #d493cf;
+  --bg: #f6cae9;
+}
+
+/* Body background changes when pink theme is active */
+html.pink body{
+  background: var(--bg);
+}
+
+/* Keep title and subtitle colors fixed – do not change with theme */
+.page-header h1{
+  color: #212529;
 }
 
 /* Base */
@@ -78,6 +87,13 @@ body{
   transition: background 0.2s;
   margin-top: 0.5rem;
 }
+/* Button color swaps based on theme */
+html.pink .theme-btn{
+  background: #b080d0; /* Lilac when pink mode is ON */
+}
+html:not(.pink) .theme-btn{
+  background: #d493cf; /* Pink when lilac mode is ON */
+}
 .theme-btn:hover,
 .theme-btn:focus-visible{
   background: #704da0;
@@ -101,8 +117,9 @@ body{
   .content-grid{ grid-template-columns: 1fr 1fr; }
 }
 
-/* Section styling */
+/* Section styling – card backgrounds STAY white */
 section{ padding: 1rem; background: var(--card); border-radius: 8px; }
+/* Headers/h2 use var(--accent) – this changes when .pink is active */
 section h2{ margin-top: 0; color: var(--accent); }
 section p, section ul{ margin-bottom: 1rem; }
 section ul{ padding-left: 1.25rem; }

@@ -38,11 +38,11 @@ origami-kids/
 2. Navigate to the project folder.
 3. Run one of the following:
    - **Python 3:** `python -m http.server` (then open http://localhost:8000)
-   - **Python 2:** `python -m SimpleHTTPServer 8000`
    - **VS Code:** Use the Live Server extension – click "Go Live" in the status bar.
 4. Open http://localhost:8000 in your browser.
 5. Verify:
    - Page scales from narrow to wide width.
-   - Theme button toggles lilac/pink mode.
+   - Theme button toggles between "Pink mode" and "Lilac mode".
+   - Color scheme changes when the button is clicked (accent from lilac `#b080d0` to pink `#e86e71`, background from `#faf0f7` to `#fdf2f8`).
    - Keyboard focus is visible (use `Tab` key).
    - Theme preference persists after reload.
