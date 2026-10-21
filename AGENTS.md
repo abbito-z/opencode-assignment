@@ -27,9 +27,9 @@ origami-kids/
 ```
 
 ## How the Interaction Works
-1. In the header, a button labeled **"Pink mode"** (or **"Lilac mode"** when active) toggles the theme.
+1. In the header, a button labeled **"Pink theme"** (or **"Lilac theme"** when active) toggles the theme.
 2. Clicking or pressing `Enter/Space` on the button adds/removes a `.pink` class from `<html>`.
-3. The `.pink` class changes the accent color variable from `--accent: #b080d0` to `--accent: #e86e71` and lightens the background tint to a pink palette.
+3. The `.pink` class changes the accent color variable from `--accent: #b080d0` to `--accent: #d493cf` and lightens the background tint to a pink palette.
 4. The button’s `aria-pressed` attribute is updated to reflect the state, and screen readers announce the change.
 5. The preference is saved to `localStorage` so the chosen theme persists across visits.
 

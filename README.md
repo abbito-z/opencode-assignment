@@ -34,14 +34,14 @@ across visits.
 
 3.  **Verify the site:**
     - Page scales from narrow (mobile) to wide (desktop) browser widths.
-    - Theme button ("Pink mode" / "Lilac mode") toggles the `.pink` class.
-    - Color scheme changes when the button is clicked (accent from lilac to pink, background tint changes).
+    - Theme button ("Pink theme" / "Lilac theme") toggles the `.pink` class.
+    - Color scheme changes when the button is clicked (accent from lilac `#b080d0` to pink `#d493cf`, background from `#f6cef9` to `#ffd8f3`).
     - Keyboard navigation works (`Tab` moves focus, `focus-visible` outlines appear).
     - Theme preference survives a page reload.
 
 ## Build / Modify
 
 - No build steps. Edit `index.html`, `style.css`, or `script.js` directly.
-- To change the accent colors, modify the `--accent` variable in `:root` (lilac: `#b080d0`) or the `.pink` rule (pink: `#e86e71`).
+- To change the accent colors, modify the `--accent` variable in `:root` (lilac: `#b080d0`) or the `.pink` rule (pink: `#d493cf`).
 - To add more content sections, add `<section>` elements inside the `.content-grid`
   container in `index.html`.
