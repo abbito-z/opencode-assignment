@@ -1,0 +1,5 @@
+Agent Used: OpenCode Nemotron 3.5 Lightning 
+Useful Prompt: after editing the themes (lilac and pink) I told it to not edit the spefic hex codes for background and accent colors. That clear instruction was more effective then when "x feature doesn't work."
+Tool Action: While digesting and executing my prompt, OpenCode often used read and write when deciding how to write the code.
+Issues: Even when trying to implement the keyboard toggle, it broke the toggle button and my theme was not switching. 
+Corrections: That inital prompt was unclear, so I reverted the message, and reset my repo so there was no conflicts between the interrupted OpenCode code and the next prompt (which should build off of the inital code). Then I restructured my prompt saying the shortcut should toggle the button rather than changing the theme itself and have it test the feature. Once the shortcut worked how I wanted it to, I had OpenCode write about this feature in the README.
