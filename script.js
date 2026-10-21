@@ -33,4 +33,21 @@
       localStorage.removeItem('origami-theme');
     }
   });
+
+  // Ctrl+Enter toggles theme
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && e.ctrlKey) {
+      e.preventDefault();
+      const isPink = html.classList.toggle('pink');
+      btn.setAttribute('aria-pressed', isPink);
+      btn.textContent = isPink ? 'Lilac theme' : 'Pink theme';
+
+      // Persist preference
+      if (isPink) {
+        localStorage.setItem('origami-theme', 'pink');
+      } else {
+        localStorage.removeItem('origami-theme');
+      }
+    }
+  });
 })();

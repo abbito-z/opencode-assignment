@@ -38,6 +38,7 @@ across visits.
     - Color scheme changes when the button is clicked (accent from lilac `#b080d0` to pink `#d493cf`, background from `#f6cef9` to `#ffd8f3`).
     - Keyboard navigation works (`Tab` moves focus, `focus-visible` outlines appear).
     - Theme preference survives a page reload.
+- **Ctrl+Enter toggles the theme** (without clicking the button).
 
 ## Build / Modify
 
